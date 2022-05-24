@@ -1,4 +1,5 @@
 import './App.css';
+import Hero from './components/Hero';
 import ResponsiveAppBar from './components/Navbar';
 
 
@@ -7,18 +8,7 @@ function App() {
   return (
     <div className="App">
       <ResponsiveAppBar/>
-      <div><h1>HELLO</h1></div>
-      <div><h1>HELLO</h1></div><div><h1>HELLO</h1></div>
-      <div><h1>HELLO</h1></div>
-      <div><h1>HELLO</h1></div><div><h1>HELLO</h1></div>
-      <div><h1>HELLO</h1></div>
-      <div><h1>HELLO</h1></div>
-      <div><h1>HELLO</h1></div><div><h1>HELLO</h1></div>
-      <div><h1>HELLO</h1></div>
-      <div><h1>HELLO</h1></div>
-      <div><h1>HELLO</h1></div><div><h1>HELLO</h1></div>
-      <div><h1>HELLO</h1></div>
-      <div><h1>HELLO</h1></div>
+      <Hero/>
     </div>
   );
 }
