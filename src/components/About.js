@@ -11,38 +11,39 @@ const  About = () => {
       <Wrapper>
         <Grid container spacing={10} justify="space-around" sx={{flexGrow: 1}}>
             <Grid item xs={6} 
-                sx={{pr:5, mt: 10, mb: 5, pl: 5
+                sx={{pr:5, mt: 10, mb: 5
             }}>    
-                <Stack spacing={4}>
+                <Stack spacing={4} sx={{ml:15, mr: 5}}>
                     <Button 
                         variant="contained" 
-                        sx={{backgroundColor: '#292B2E', borderRadius: 50, ml: 5,
+                        sx={{backgroundColor: '#292B2E', borderRadius: 50, boxShadow: 6,
                         '&:hover': {
                             transition: "transform 0.15s ease-in-out",
-                            transform: 'scale(1.2)',
-                            backgroundColor: '#292B2E',
+                            transform: 'scale(1.1)',
+                            backgroundColor: '#ffb742',
                             color: 'white'
                     }}}>
                         <AccountTreeOutlinedIcon sx={{mr: 2}}/>
                         <h2>20+ Projects</h2>
-                        <ArrowForwardIosIcon sx={{color: 'white', ml: 2}}/>
+                        <ArrowForwardIosIcon sx={{ml: 2}}/>
                     </Button>
-                    <Button variant="contained" sx={{backgroundColor: '#292B2E', borderRadius: 50, ml: 5,
+                    <Button variant="contained" 
+                        sx={{backgroundColor: '#292B2E', borderRadius: 50, boxShadow: 6,
                         '&:hover': {
                             transition: "transform 0.15s ease-in-out",
-                            transform: 'scale(1.2)',
-                            backgroundColor: '#292B2E',
+                            transform: 'scale(1.1)',
+                            backgroundColor: '#ffb742',
                             color: 'white'
                     }}}>
                         <CheckCircleOutlinedIcon sx={{mr: 2}}/>
                         <h2>3+ years of Experience</h2>
                         <ArrowForwardIosIcon sx={{color: 'white', ml: 2}}/>
                     </Button>
-                    <Button variant="contained" sx={{backgroundColor: '#292B2E', borderRadius: 50, 
+                    <Button variant="contained" sx={{backgroundColor: '#292B2E', borderRadius: 50, boxShadow: 6,
                     '&:hover': {
                         transition: "transform 0.15s ease-in-out",
-                        transform: 'scale(1.2)',
-                        backgroundColor: '#292B2E',
+                        transform: 'scale(1.1)',
+                        backgroundColor: '#ffb742',
                         color: 'white'
                     }}}>
                         <LanguageOutlinedIcon sx={{mr: 2}}/>
