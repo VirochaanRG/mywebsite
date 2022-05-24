@@ -22,7 +22,7 @@ const ResponsiveAppBar = () => {
 
 
   return (
-    <AppBar position="sticky" sx={{backgroundColor: '#252C2F', display: "flex", flexDirection: "column"}}>
+    <AppBar position="sticky" sx={{backgroundColor: '#212529', display: "flex", flexDirection: "column"}}>
       <Container maxWidth="xl" >
         <Toolbar disableGutters >
           <LightbulbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color:'#ffb742'}} />
