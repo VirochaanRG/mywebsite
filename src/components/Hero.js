@@ -1,4 +1,4 @@
-import { Avatar, Button, Card, Grid, Typography } from '@mui/material'
+import { Avatar, Button, Grid, Typography } from '@mui/material'
 import React from 'react'
 import styled, {keyframes} from 'styled-components'
 import ProfilePic from '../images/pfp.png'
