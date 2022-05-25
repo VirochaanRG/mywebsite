@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About';
+import Contact from './components/Contact';
 import Hero from './components/Hero';
 import Languages from './components/Languages';
 import ResponsiveAppBar from './components/Navbar';
@@ -17,6 +18,7 @@ function App() {
       <Skills/>
       <Languages/>
       <Projects/>
+      <Contact/>
     </div>
   );
 }
