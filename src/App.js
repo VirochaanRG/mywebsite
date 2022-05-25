@@ -1,6 +1,7 @@
 import './App.css';
 import About from './components/About';
 import Hero from './components/Hero';
+import Languages from './components/Languages';
 import ResponsiveAppBar from './components/Navbar';
 import Skills from './components/Skills';
 
@@ -13,6 +14,7 @@ function App() {
       <Hero/>
       <About/>
       <Skills/>
+      <Languages/>
     </div>
   );
 }
