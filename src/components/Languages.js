@@ -30,9 +30,11 @@ const Languages = () => {
   return (
     <Box>
         <Grid container spacing={2}>
-            <Grid item xs={6} sx={{my: 5}}>
+            <Grid item xs={6} sx={{mt: 20}}>
                 <Typography variant="h4" sx={{fontFamily: 'Poppins', fontWeight: 'bold', color: 'white', textAlign: 'center'}}>Programming Skills/Languages</Typography>
-                <Typography variant="text"></Typography>
+                <Info>
+                    <Typography variant="text" sx={{color: 'white', fontWeight: '300', ml: 10, fontSize: "1.3rem", display: "block", mr: 5}}>I have experience in a number of programming languages and have utilised them in various usecases. I have demonstrated this skill that I have learnt through projects that I have developed.</Typography>
+                </Info>
             </Grid>
             <Grid item xs={6} sx={{my: 10, pl: 15}}>
                 <Discipline>
@@ -41,16 +43,28 @@ const Languages = () => {
                             setShowStack(!showStack);
                             setShowMachine(false);
                             setShowData(false);
-                        }} sx={ showStack ? {transform: 'scale(1.1)',
-                                backgroundColor: '#ffb742',
-                                color: 'white'} :{fontFamily: '', color: 'white', backgroundColor: '#292B2E', borderRadius: 50, boxShadow: 6, fontSize: "1.3rem", display: "flex", justifyContent: 'center', '&:hover': {
-                                transition: "transform 0.15s ease-in-out",
-                                transform: 'scale(1.1)',
-                                backgroundColor: '#ffb742',
-                                color: 'white'
+                        }} sx={ showStack ? 
+                                {
+                                    py: 2, ml: 10, mr: 10, backgroundColor: '#ffb742',
+                                    color: 'white', width: '100%', fontFamily: '', 
+                                    borderRadius: 50, boxShadow: 6, 
+                                    fontSize: "1.3rem",alignSelf: 'stretch','&:hover': {
+                                        transition: "transform 0.15s ease-in-out",
+                                        transform: 'scale(1.1)',
+                                        backgroundColor: '#ffb742',
+                                        color: 'white'
+                                }} 
+                                : {
+                                    py: 2, ml: 10, mr: 10,fontFamily: '',  width: '100%',
+                                    color: 'white', backgroundColor: '#292B2E', 
+                                    borderRadius: 50,alignSelf: 'stretch', boxShadow: 6, 
+                                    fontSize: "1.3rem",'&:hover': {
+                                        transition: "transform 0.15s ease-in-out",
+                                        transform: 'scale(1.1)',
+                                        backgroundColor: '#ffb742',
+                                        color: 'white'
                         }}}>Full Stack Development</Button>
                     </ButtonHolder>
-                    
                     {showStack && 
                         <ImageHolder> 
                             <Image> <img src={Html} style={imageStyle}/></Image>
@@ -65,11 +79,33 @@ const Languages = () => {
                     }
                 </Discipline>
                 <Discipline>
-                    <Button variant="contained" onClick={() =>{
-                        setShowStack(false);
-                        setShowMachine(!showMachine);
-                        setShowData(false);
-                    }} sx={{fontFamily: '', color: 'white'}}>Machine Learning</Button>
+                    <ButtonHolder>
+                        <Button variant="contained" onClick={() =>{
+                            setShowStack(false);
+                            setShowMachine(!showMachine);
+                            setShowData(false);
+                        }} sx={ showMachine ? 
+                                    {
+                                        py: 2, ml: 10, mr: 10, backgroundColor: '#ffb742',
+                                        color: 'white', width: '100%', fontFamily: '', 
+                                        borderRadius: 50, boxShadow: 6, 
+                                        fontSize: "1.3rem",alignSelf: 'stretch','&:hover': {
+                                            transition: "transform 0.15s ease-in-out",
+                                            transform: 'scale(1.1)',
+                                            backgroundColor: '#ffb742',
+                                            color: 'white'
+                                    }} 
+                                    : {
+                                        py: 2, ml: 10, mr: 10,fontFamily: '',  width: '100%',
+                                        color: 'white', backgroundColor: '#292B2E', 
+                                        borderRadius: 50,alignSelf: 'stretch', boxShadow: 6, 
+                                        fontSize: "1.3rem",'&:hover': {
+                                            transition: "transform 0.15s ease-in-out",
+                                            transform: 'scale(1.1)',
+                                            backgroundColor: '#ffb742',
+                                            color: 'white'
+                            }}}>Machine Learning</Button>
+                    </ButtonHolder>
                     {showMachine && 
                         <ImageHolder> 
                             <Image> <img src={Python} style={imageStyle}/></Image>
@@ -81,11 +117,33 @@ const Languages = () => {
                     }
                 </Discipline>
                 <Discipline>
-                    <Button variant="contained" onClick={() =>{
-                        setShowStack(false);
-                        setShowMachine(false);
-                        setShowData(!showData);
-                    }} sx={{fontFamily: '', color: 'white'}}>Data Analytics and Cloud Computing</Button>
+                    <ButtonHolder>
+                        <Button variant="contained" onClick={() =>{
+                            setShowStack(false);
+                            setShowMachine(false);
+                            setShowData(!showData);
+                        }} sx={ showData ? 
+                                    {
+                                        py: 2, ml: 10, mr: 10, backgroundColor: '#ffb742',
+                                        color: 'white', width: '100%', fontFamily: '', 
+                                        borderRadius: 50, boxShadow: 6, 
+                                        fontSize: "1.3rem",alignSelf: 'stretch','&:hover': {
+                                            transition: "transform 0.15s ease-in-out",
+                                            transform: 'scale(1.1)',
+                                            backgroundColor: '#ffb742',
+                                            color: 'white'
+                                    }} 
+                                    : {
+                                        py: 2, ml: 10, mr: 10,fontFamily: '',  width: '100%',
+                                        color: 'white', backgroundColor: '#292B2E', 
+                                        borderRadius: 50,alignSelf: 'stretch', boxShadow: 6, 
+                                        fontSize: "1.3rem",'&:hover': {
+                                            transition: "transform 0.15s ease-in-out",
+                                            transform: 'scale(1.1)',
+                                            backgroundColor: '#ffb742',
+                                            color: 'white'
+                            }}}>Data Analytics and Cloud Computing</Button>
+                    </ButtonHolder>
                     {showData &&
                         <ImageHolder> 
                             <Image> <img src={Python} style={imageStyle}/></Image>
@@ -134,8 +192,10 @@ const ImageHolder =styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, 5rem);
     grid-gap: 2rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     margin-right: 1rem;
+    justify-content: center;
 `
 
 const Discipline = styled.div`
@@ -144,7 +204,14 @@ const Discipline = styled.div`
 
 const ButtonHolder =styled.div`
     display: flex;
-    justify-content: center;
+    flex: 1;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    width: 100%;
+`
+
+const Info = styled.div`
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
 `
