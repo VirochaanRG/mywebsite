@@ -1,4 +1,4 @@
-import { Box, Grid, SpeedDial, SpeedDialAction, SpeedDialIcon, Typography, Button } from '@mui/material';
+import { Box, Grid, Typography, Button } from '@mui/material';
 import React, {useState} from 'react';
 import styled from 'styled-components/';
 import Python from '../images/python.png'
@@ -67,14 +67,14 @@ const Languages = () => {
                     </ButtonHolder>
                     {showStack && 
                         <ImageHolder> 
-                            <Image> <img src={Html} style={imageStyle}/></Image>
-                            <Image><img src={Css} style={imageStyle}/></Image>
-                            <Image><img src={Js} style={imageStyle}/></Image>
-                            <Image><img src={Express} style={imageStyle}/></Image>
-                            <Image><img src={Reactimg} style={imageStyle}/></Image>
-                            <Image><img src={MongoDb} style={imageStyle}/></Image>
-                            <Image><img src={Mysql} style={imageStyle}/></Image>
-                            <Image><img src={Node} style={imageStyle}/></Image>
+                            <Image> <img src={Html} alt="" style={imageStyle}/></Image>
+                            <Image><img src={Css} alt="" style={imageStyle}/></Image>
+                            <Image><img src={Js} alt="" style={imageStyle}/></Image>
+                            <Image><img src={Express} alt="" style={imageStyle}/></Image>
+                            <Image><img src={Reactimg} alt="" style={imageStyle}/></Image>
+                            <Image><img src={MongoDb } alt="" style={imageStyle}/></Image>
+                            <Image><img src={Mysql}  alt="" style={imageStyle}/></Image>
+                            <Image><img src={Node} alt="" style={imageStyle}/></Image>
                         </ImageHolder>
                     }
                 </Discipline>
@@ -108,11 +108,11 @@ const Languages = () => {
                     </ButtonHolder>
                     {showMachine && 
                         <ImageHolder> 
-                            <Image> <img src={Python} style={imageStyle}/></Image>
-                            <Image><img src={Numpy} style={imageStyle}/></Image>
-                            <Image><img src={SciKit} style={imageStyleRect}/></Image>
-                            <Image><img src={Pandas} style={imageStyle}/></Image>
-                            <Image><img src={TensorFlow} style={imageStyle}/></Image>
+                            <Image> <img src={Python}  alt="" style={imageStyle}/></Image>
+                            <Image><img src={Numpy} alt="" style={imageStyle}/></Image>
+                            <Image><img src={SciKit} alt="" style={imageStyleRect}/></Image>
+                            <Image><img src={Pandas} alt="" style={imageStyle}/></Image>
+                            <Image><img src={TensorFlow} alt="" style={imageStyle}/></Image>
                         </ImageHolder>
                     }
                 </Discipline>
@@ -146,11 +146,11 @@ const Languages = () => {
                     </ButtonHolder>
                     {showData &&
                         <ImageHolder> 
-                            <Image> <img src={Python} style={imageStyle}/></Image>
-                            <Image><img src={Rimg} style={imageStyle}/></Image>
-                            <Image><img src={Aws} style={imageStyle}/></Image>
-                            <Image><img src={Matlab} style={imageStyle}/></Image>
-                            <Image><img src={Spacy} style={imageStyleRect}/></Image>
+                            <Image> <img src={Python} alt="" style={imageStyle}/></Image>
+                            <Image><img src={Rimg} alt="" style={imageStyle}/></Image>
+                            <Image><img src={Aws} alt="" style={imageStyle}/></Image>
+                            <Image><img src={Matlab} alt="" style={imageStyle}/></Image>
+                            <Image><img src={Spacy} alt="" style={imageStyleRect}/></Image>
                         </ImageHolder>
                     }
                 </Discipline>

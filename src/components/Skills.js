@@ -1,6 +1,6 @@
 import { Box, Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import {HiCode} from "react-icons/hi";
 import {SiPython} from "react-icons/si"
 import {IoAnalyticsSharp} from "react-icons/io5"
