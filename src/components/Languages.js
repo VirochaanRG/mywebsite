@@ -174,6 +174,7 @@ const Image = styled.div`
     justify-content: center;
     display: flex;
     padding: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7)
     &:hover {
         top: -10px;
         
