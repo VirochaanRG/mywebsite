@@ -6,8 +6,28 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import {HashLink as Link} from "react-router-hash-link";
 
-const pages = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+const pages = [
+  { name: 'Home', 
+    tag: '#Home',
+  },
+  {
+    name: 'About',
+    tag: '#About',
+  },
+  {
+    name: 'Skills',
+    tag: '#Skills',
+  },
+  {
+    name: 'Projects',
+    tag: '#Projects',
+  },
+  {
+    name: 'Contact',
+    tag: '#Contact',
+  }];
 
 const ResponsiveAppBar = () => {
   // const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -44,12 +64,14 @@ const ResponsiveAppBar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
+              <Link to={page.tag} smooth>
+                <Button
+                  key={page.name}
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  {page.name}
+                </Button>
+              </Link>
             ))}
           </Box>
           <LightbulbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color:'#ffb742', visibility: 'hidden' }} />
