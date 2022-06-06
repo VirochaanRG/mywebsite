@@ -6,20 +6,22 @@ import Languages from './components/Languages';
 import ResponsiveAppBar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-
+import {BrowserRouter} from 'react-router-dom';
 
 
 function App() {
   return (
-    <div className="App">
-      <ResponsiveAppBar/>
-      <Hero/>
-      <About/>
-      <Skills/>
-      <Languages/>
-      <Projects/>
-      <Contact/>
-    </div>
+    <BrowserRouter >
+      <div className="App" id="Home">
+        <ResponsiveAppBar/>
+        <Hero/>
+        <About/>
+        <Skills/>
+        <Languages/>
+        <Projects/>
+        <Contact/>
+      </div>
+    </BrowserRouter>
   );
 }
 

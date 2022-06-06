@@ -10,7 +10,7 @@ const styleInfo = {paddingRight: "2rem", verticalAlign: 'middle', color: '#ffb74
 
 const Skills = () => {
   return (
-    <Box sx={{backgroundColor: "#212529"}}>
+    <Box sx={{backgroundColor: "#212529"}} id="Skills">
         <Typography variant="h3" sx={{fontFamily: 'Poppins', color: 'white', textAlign: 'center', fontWeight: 'bold'}}>Skills</Typography>
         <Grid container spacing={3}>
             <Grid item xs={4} sx={{mt: 4, mb: 4}}>

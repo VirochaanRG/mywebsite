@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <Box sx={{mb: 10}}>
+    <Box sx={{mb: 10}} id="Contact">
       <Typography variant="h3" sx={{fontFamily: 'Poppins', color: 'white', textAlign: 'center', fontWeight: 'bold', mb: 10}}>Contact Me</Typography>
       <Grid container spacing={2}>
         <Grid item xs={6}>

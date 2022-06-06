@@ -41,7 +41,7 @@ const projectDescNlp = {
 
 const Projects = () => {
   return (
-    <Box>
+    <Box id="Projects">
         <Typography variant="h3" sx={{fontFamily: 'Poppins', color: 'white', textAlign: 'center', fontWeight: 'bold'}}>Featured Projects</Typography>
         <Splide
             options={{perPage: 3,

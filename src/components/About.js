@@ -8,7 +8,7 @@ import AccountTreeOutlinedIcon from '@mui/icons-material/AccountTreeOutlined';
 
 const  About = () => {
   return (
-      <Wrapper>
+      <Wrapper id="About">
         <Grid container spacing={10} justify="space-around" sx={{flexGrow: 1}}>
             <Grid item xs={6} 
                 sx={{pr:5, mt: 10, mb: 5
