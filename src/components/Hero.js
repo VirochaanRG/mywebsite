@@ -10,10 +10,10 @@ import AccountTreeOutlinedIcon from '@mui/icons-material/AccountTreeOutlined';
 const Hero = () => {
   return (
     <Wrapper>
-        <Typography variant="h4" color="white" sx={{mt: 10, mb: 2, paddingTop: 2}}>
+        <Typography variant="h4"  sx={{color: "white", pt: 5, pb:5}}>
             <span>Hi, I am </span> 
             <Name>Virochaan Ravichandran Gowri</Name>
-            <span className="">👋</span>
+            <span>👋</span>
         </Typography>
         <Typography variant="h3" color="white" sx={{mb: 2}}>
             <Role>Software Engineer and Full-Stack Developer</Role>
@@ -25,14 +25,14 @@ const Hero = () => {
             alt="Virochaan" 
             src={ProfilePic}
             sx={{
-                width:250, 
-                height:250, 
+                width:{xs: 250, sm:250}, 
+                height:{xs: 250, sm:250 }, 
                 display:'block', 
                 marginLeft: 'auto', 
                 marginRight: 'auto'
             }}>    
         </Avatar>
-        <Grid container spacing={2} sx={{mt: 2}}>
+        {/* <Grid container spacing={2} sx={{mt: 2, visibility:{"hidden"} }}>
             <Grid item xs ={4}>
                 <Button 
                     variant="contained" 
@@ -74,7 +74,7 @@ const Hero = () => {
                     <ArrowForwardIosIcon sx={{color: 'white', ml: 2}}/>
                 </Button>
             </Grid>
-        </Grid>
+        </Grid> */}
     </Wrapper>
     
   )

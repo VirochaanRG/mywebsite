@@ -42,8 +42,8 @@ const ResponsiveAppBar = () => {
 
 
   return (
-    <AppBar position="sticky" sx={{backgroundColor: '#212529', display: "flex", flexDirection: "column"}}>
-      <Container maxWidth="xl" >
+    <AppBar position="sticky" sx={{width: "100vw", backgroundColor: '#212529', display: "flex", flexDirection: "column"}}>
+      <Container>
         <Toolbar disableGutters >
           <LightbulbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color:'#ffb742'}} />
           <Typography
@@ -62,7 +62,7 @@ const ResponsiveAppBar = () => {
           >
             VIRO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' }, justifyContent: 'center' }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' }, justifyContent: 'center', width: "100vw" }}>
             {pages.map((page) => (
               <Link to={page.tag} smooth>
                 <Button
